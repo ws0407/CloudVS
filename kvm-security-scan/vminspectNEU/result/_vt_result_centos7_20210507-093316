@@ -1,0 +1,20 @@
+[
+    {
+        "name": "/home/user/eicar.txt",
+        "hash": "e354e02b54e3780dd9b409d2a9f65180dac72203",
+        "detections": {
+            "Tencent": {
+            "version": "1.0.0.1",
+            "detected": true,
+            "update": "20210415",
+            "result": "EICAR.TEST.NOT-A-VIRUS"
+            },
+            "Symantec": {
+            "version": "2021.1.0.32",
+            "detected": true,
+            "update": "20210415",
+            "result": "EICAR Test String"
+            }
+        }
+    }
+]

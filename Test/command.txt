@@ -1,0 +1,6 @@
+list file 'kvm/centos7.img'
+vt_scan '/centos7.img' 'EICAR.*' 320007e9c21be863c438e9339474e5af6dde02ed6bea54cebf3748090748d939
+list app 'kvm/centos7.img'
+list app 'kvm/ubuntu18.img'
+list config 'docker.*' 'kvm/ubuntu18.img'
+vuln_scan 'kvm/ubuntu18.img'

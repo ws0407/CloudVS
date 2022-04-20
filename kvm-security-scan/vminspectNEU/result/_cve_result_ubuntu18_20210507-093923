@@ -1,0 +1,45 @@
+[
+  {
+    "name": "gnupg",
+    "version": "2.0.22",
+    "vulnerabilities": [
+      [
+        "CVE-2014-4617",
+        "The do_uncompress function in g10/compress.c in GnuPG 1.x before 1.4.17 and 2.x before 2.0.24 allows context-dependent attackers to cause a denial of service (infinite loop) via malformed compressed packets, as demonstrated by an a3 01 5b ff byte sequence."
+      ]
+    ]
+  },
+  {
+    "name": "openssl",
+    "version": "1.0.1f",
+    "vulnerabilities": [
+      [
+        "CVE-2016-2842",
+        "The doapr_outch function in crypto/bio/b_print.c in OpenSSL 1.0.1 before 1.0.1s and 1.0.2 before 1.0.2g does not verify that a certain memory allocation succeeds, which allows remote attackers to cause a denial of service (out-of-bounds write or memory consumption) or possibly have unspecified other impact via a long string, as demonstrated by a large amount of ASN.1 data, a different vulnerability than CVE-2016-0799."
+      ],
+    ]
+  },
+  {
+    "name": "linux_kernel",
+    "version": "18.04.5",
+    "vulnerabilities": [
+      [
+        "CVE-2016-5195",
+        "Race condition in mm/gup.c in the Linux kernel 2.x through 4.x before 4.8.3 allows local users to gain privileges by leveraging incorrect handling of a copy-on-write (COW) feature to write to a read-only memory mapping, as exploited in the wild in October 2016, aka \"Dirty COW.\""
+      ],
+    ]
+  },
+  {
+    "name": "docker-ce",
+    "version": "18.03.1",
+    "vulnerabilities": [
+      [
+        "CVE-2019-5736",
+        "runc through 1.0-rc6, as used in Docker before 18.09.2 and other products, allows attackers to overwrite the host runc binary (and consequently obtain host root access) by leveraging the ability to execute a command as root within one of these types of containers: (1) a new container with an attacker-controlled image, or (2) an existing container, to which the attacker previously had write access, that can be attached with docker exec. This occurs because of file-descriptor mishandling, related to /proc/self/exe."
+      ],
+    ]
+  },
+  {
+
+  }
+]
